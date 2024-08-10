@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="cursor"></div>
+      <div class="head">
+        <nav class="navbar">
+          <div class="logo">Vinay</div>
+          <div class="right">
+            <button
+              class="container"
+              aria-label="Toggle color mode"
+              title="Toggle color mode"
+            >
+              <div class="sun visible"></div>
+              <div class="moon">
+                <div class="star"></div>
+                <div class="star small"></div>
+              </div>
+            </button>
+            <i id="menu-toggle" class="menu-icon">
+              <img src="/img/menu-line.png" alt="Menu Icon" />
+            </i>
+          </div>
+          <div class="nav" id="sidebar">
+            <i id="close-sidebar" class="close-icon">
+              <img src="/img/xrp-fill.png" alt="Close Icon" />
+            </i>
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+        <div id="homemain">
+          <h1>Hello, it's Me</h1>
+          <div class="headings">
+            <h1 class="hvr">Vinay</h1>
+            <h1 class="hvr">Kumar</h1>
+            <h1 class="hvr">Sharma</h1>
+          </div>
+        </div>
+        <div id="Home" class="homelast" class="container-flex">
+          <div class="side-img">
+            <img src="/img/p.jpg" alt="Side Image" />
+          </div>
+          <div class="hvr-small">
+            <p>
+              Hi, I’m Vinay Kumar Sharma, a Computer Science student at GLA
+              University. I have experience with web development and machine
+              learning from my internship at Hindalco Industries and various
+              projects. I’m skilled in Java, Reactjs, HTML/CSS, and JavaScript,
+              and I’m eager to contribute my skills to your team.
+            </p>
+            <div class="button-container">
+              <button class="download-button">
+                <i class="ri-download-cloud-line"></i>
+                <span class="button-text">Resume</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <br />
+      </div>
+      <div class="icon">
+        <a href="">
+          <i class="ri-linkedin-box-fill"></i>
+        </a>
+        <a href="">
+          <i class="ri-github-fill"></i>
+        </a>
+        <a href="">
+          <i class="ri-facebook-circle-fill"></i>
+        </a>
+        <a href="">
+          <i class="ri-instagram-fill"></i>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section id="About">
+        <h1>About</h1>
+        <div class="homelast" class="container-flex">
+          <div class="side-img">
+            <img src="/img/p.jpg" alt="Side Image" />
+          </div>
+          <div class="hvr-small">
+            <p>
+              I’m Vinay Kumar Sharma, a Computer Science student at GLA
+              University with hands-on experience in web development and machine
+              learning. I have developed interactive web pages and optimized
+              backend systems during my internship at Hindalco Industries.
+            </p>
+            <div class="popup" id="popup-1">
+              <div class="overlay"></div>
+              <div class="content">
+                <i class="ri-close-line close-btn" onclick="togglePopup()"></i>
+                <h2>About</h2>
+                <p>
+                  I’m Vinay Kumar Sharma, a Computer Science student at GLA
+                  University with hands-on experience in web development and
+                  machine learning. I have developed interactive web pages and
+                  optimized backend systems during my internship at Hindalco
+                  Industries. My projects include a Diabetes Prediction model
+                  and a Social Help & Network platform. Proficient in Java,
+                  Reactjs, HTML/CSS, and JavaScript, I’m passionate about
+                  leveraging technology to solve real-world problems.
+                </p>
+              </div>
+            </div>
+
+            <button class="read-button" onclick="togglePopup()">
+              Read more
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 128 128"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="#0074BD"
+                  d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zM44.629 84.455s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"
+                />
+                <path
+                  fill="#EA2D2E"
+                  d="M69.802 61.271c6.025 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.792 15.635-29.58 0 .001-42.731 10.67-22.324 34.187z"
+                />
+                <path
+                  fill="#0074BD"
+                  d="M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM49.912 70.294s-22.686 5.389-8.033 7.348c6.188.828 18.518.638 30.011-.326 9.39-.789 18.813-2.474 18.813-2.474s-3.308 1.419-5.704 3.053c-23.042 6.061-67.544 3.238-54.731-2.958 10.832-5.239 19.644-4.643 19.644-4.643zM90.609 93.041c23.421-12.167 12.591-23.86 5.032-22.285-1.848.385-2.677.72-2.677.72s.688-1.079 2-1.543c14.953-5.255 26.451 15.503-4.823 23.725 0-.002.359-.327.468-.617z"
+                />
+                <path
+                  fill="#EA2D2E"
+                  d="M76.491 1.587s12.968 12.976-12.303 32.923c-20.266 16.006-4.621 25.13-.007 35.559-11.831-10.673-20.509-20.07-14.688-28.815 8.548-12.834 32.229-19.059 26.998-39.667z"
+                />
+                <path
+                  fill="#0074BD"
+                  d="M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.577 7.231-19.186 3.612-42.854 3.191-56.887.874 0 .001 2.875 2.381 17.647 3.331z"
+                />
+              </svg>
+            </div>
+            <h3>Java</h3>
+            <div class="skill-percentage">
+              <div class="percentage-container">
+                <div class="progress-bar" style="width: 80%"></div>
+                <span class="percentage-text">70%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m5.902 27.201-2.247-25.201h24.69l-2.25 25.197-10.11 2.803z"
+                  fill="#e44f26"
+                />
+                <path
+                  d="m16 27.858 8.17-2.265 1.922-21.532h-10.092z"
+                  fill="#f1662a"
+                />
+                <path
+                  d="m16 13.407h-4.09l-.282-3.165h4.372v-3.091h-.011-7.739l.074.83.759 8.517h6.917z"
+                  fill="#ebebeb"
+                />
+                <path
+                  d="m16 21.434-.014.004-3.442-.929-.22-2.465h-1.673-1.43l.433 4.852 6.332 1.758.014-.004z"
+                  fill="#ebebeb"
+                />
+                <g fill="#fff">
+                  <path
+                    d="m15.989 13.407v3.091h3.806l-.358 4.009-3.448.93v3.216l6.337-1.757.046-.522.726-8.137.076-.83h-.833z"
+                  />
+                  <path
+                    d="m15.989 7.151v1.92 1.164.007h7.456.01l.062-.694.141-1.567.074-.83z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <h3>HTML</h3>
+            <div class="skill-percentage">
+              <div class="percentage-container">
+                <div class="progress-bar" style="width: 70%"></div>
+                <span class="percentage-text">90%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m5.902 27.201-2.246-25.201h24.688l-2.249 25.197-10.11 2.803z"
+                  fill="#1572b6"
+                />
+                <path
+                  d="m16 27.858 8.17-2.265 1.922-21.532h-10.092z"
+                  fill="#33a9dc"
+                />
+                <path
+                  d="m16 13.191h4.09l.282-3.165h-4.372v-3.091h.011 7.739l-.074.829-.759 8.518h-6.917z"
+                  fill="#fff"
+                />
+                <path
+                  d="m16.019 21.218-.014.004-3.442-.93-.22-2.465h-1.673-1.43l.433 4.853 6.331 1.758.015-.004z"
+                  fill="#ebebeb"
+                />
+                <path
+                  d="m19.827 16.151-.372 4.139-3.447.93v3.216l6.336-1.756.047-.522.537-6.007z"
+                  fill="#fff"
+                />
+                <g fill="#ebebeb">
+                  <path
+                    d="m16.011 6.935v1.92 1.163.008h-7.456-.01l-.062-.695-.141-1.567-.074-.829z"
+                  />
+                  <path
+                    d="m16 13.191v1.92 1.163.008h-3.389-.01l-.062-.695-.14-1.567-.074-.829z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <h3>CSS</h3>
+            <div class="skill-percentage">
+              <div class="percentage-container">
+                <div class="progress-bar" style="width: 75%"></div>
+                <span class="percentage-text">75%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect fill="#f7df1e" height="512" rx="15%" width="512" />
+                <path
+                  d="m324 370c10 17 24 29 47 29 20 0 33-10 33-24 0-16-13-22-35-32l-12-5c-35-15-58-33-58-72 0-36 27-64 70-64 31 0 53 11 68 39l-37 24c-8-15-17-21-31-21s-23 9-23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76 0 43-34 67-80 67-45 0-74-21-88-49zm-170 4c8 13 14 25 31 25 16 0 26-6 26-30v-166h48v164c0 50-29 72-72 72-39 0-61-20-72-44z"
+                />
+              </svg>
+            </div>
+            <h3>Javascript</h3>
+            <div class="skill-percentage">
+              <div class="percentage-container">
+                <div class="progress-bar" style="width: 80%"></div>
+                <span class="percentage-text">82%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="#00d8ff">
+                  <circle cx="16" cy="15.974" r="2.5" />
+                  <path
+                    d="m16 21.706a28.385 28.385 0 0 1 -8.88-1.2 11.3 11.3 0 0 1 -3.657-1.958 3.543 3.543 0 0 1 -1.463-2.574c0-1.653 1.816-3.273 4.858-4.333a28.755 28.755 0 0 1 9.142-1.348 28.674 28.674 0 0 1 9.022 1.324 11.376 11.376 0 0 1 3.538 1.866 3.391 3.391 0 0 1 1.44 2.491c0 1.718-2.03 3.459-5.3 4.541a28.8 28.8 0 0 1 -8.7 1.191zm0-10.217a27.948 27.948 0 0 0 -8.749 1.282c-2.8.977-4.055 2.313-4.055 3.2 0 .928 1.349 2.387 4.311 3.4a27.21 27.21 0 0 0 8.493 1.139 27.6 27.6 0 0 0 8.325-1.13c3.075-1.019 4.475-2.48 4.475-3.406a2.327 2.327 0 0 0 -1.01-1.573 10.194 10.194 0 0 0 -3.161-1.654 27.462 27.462 0 0 0 -8.629-1.258z"
+                  />
+                  <path
+                    d="m10.32 28.443a2.639 2.639 0 0 1 -1.336-.328c-1.432-.826-1.928-3.208-1.327-6.373a28.755 28.755 0 0 1 3.4-8.593 28.676 28.676 0 0 1 5.653-7.154 11.376 11.376 0 0 1 3.384-2.133 3.391 3.391 0 0 1 2.878 0c1.489.858 1.982 3.486 1.287 6.859a28.806 28.806 0 0 1 -3.316 8.133 28.385 28.385 0 0 1 -5.476 7.093 11.3 11.3 0 0 1 -3.523 2.189 4.926 4.926 0 0 1 -1.624.307zm1.773-14.7a27.948 27.948 0 0 0 -3.26 8.219c-.553 2.915-.022 4.668.75 5.114.8.463 2.742.024 5.1-2.036a27.209 27.209 0 0 0 5.227-6.79 27.6 27.6 0 0 0 3.181-7.776c.654-3.175.089-5.119-.713-5.581a2.327 2.327 0 0 0 -1.868.089 10.194 10.194 0 0 0 -3.01 1.918 27.464 27.464 0 0 0 -5.4 6.849z"
+                  />
+                  <path
+                    d="m21.677 28.456c-1.355 0-3.076-.82-4.868-2.361a28.756 28.756 0 0 1 -5.747-7.237 28.676 28.676 0 0 1 -3.374-8.471 11.376 11.376 0 0 1 -.158-4 3.391 3.391 0 0 1 1.434-2.487c1.487-.861 4.01.024 6.585 2.31a28.8 28.8 0 0 1 5.39 6.934 28.384 28.384 0 0 1 3.41 8.287 11.3 11.3 0 0 1 .137 4.146 3.543 3.543 0 0 1 -1.494 2.555 2.59 2.59 0 0 1 -1.315.324zm-9.58-10.2a27.949 27.949 0 0 0 5.492 6.929c2.249 1.935 4.033 2.351 4.8 1.9.8-.465 1.39-2.363.782-5.434a27.212 27.212 0 0 0 -3.271-7.911 27.6 27.6 0 0 0 -5.145-6.64c-2.424-2.152-4.39-2.633-5.191-2.169a2.327 2.327 0 0 0 -.855 1.662 10.194 10.194 0 0 0 .153 3.565 27.465 27.465 0 0 0 3.236 8.1z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <h3>React.js</h3>
+            <div class="skill-percentage">
+              <div class="percentage-container">
+                <div class="progress-bar" style="width: 70%"></div>
+                <span class="percentage-text">80%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg
+                width="50"
+                height="50"
+                preserveAspectRatio="xMidYMid"
+                viewBox="0 0 256 289"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m127.999999 288.463771c-3.975155 0-7.6853-1.060043-11.130435-2.915115l-35.2463756-20.935818c-5.3002084-2.915114-2.650103-3.975156-1.0600426-4.505177 7.1552801-2.385091 8.4803317-2.915114 15.900623-7.15528.7950291-.53002 1.8550717-.265009 2.650103.265011l27.0310552 16.165632c1.060043.530021 2.385094.530021 3.180126 0l105.739129-61.21739c1.060043-.530023 1.590063-1.590063 1.590063-2.915115v-122.1697723c0-1.3250538-.53002-2.3850941-1.590063-2.9151143l-105.739129-60.9523818c-1.060043-.5300201-2.385094-.5300201-3.180126 0l-105.7391316 60.9523818c-1.0600403.5300202-1.5900605 1.8550717-1.5900605 2.9151143v122.1697723c0 1.060041.5300202 2.385092 1.5900605 2.915115l28.8861293 16.695652c15.6356117 7.950309 25.4409949-1.325052 25.4409949-10.600415v-120.579712c0-1.5900605 1.3250515-3.1801232 3.1801232-3.1801232h13.5155288c1.5900627 0 3.1801232 1.3250515 3.1801232 3.1801232v120.579712c0 20.935818-11.3954436 33.126293-31.2712211 33.126293-6.0952375 0-10.8654235 0-24.3809523-6.625258l-27.8260867-15.90062c-6.89026889-3.975157-11.1304347-11.395446-11.1304347-19.345758v-122.1697723c0-7.9503092 4.24016581-15.3706005 11.1304347-19.3457551l105.7391293-61.21739308c6.62526-3.71014336 15.635612-3.71014336 22.260872 0l105.739129 61.21739308c6.890269 3.9751546 11.130435 11.3954459 11.130435 19.3457551v122.1697723c0 7.950312-4.240166 15.370601-11.130435 19.345758l-105.739129 61.21739c-3.445137 1.590063-7.420291 2.385095-11.130437 2.385095zm32.596275-84.008283c-46.376813 0-55.917185-21.200829-55.917185-39.221533 0-1.590062 1.325052-3.180123 3.180123-3.180123h13.78054c1.590061 0 2.915112 1.06004 2.915112 2.650103 2.120083 14.045549 8.215323 20.935818 36.306419 20.935818 22.260871 0 31.801243-5.035197 31.801243-16.960663 0-6.890269-2.650103-11.925466-37.366461-15.370601-28.886127-2.915114-46.90683-9.275363-46.90683-32.331263 0-21.4658385 18.020703-34.1863359 48.231884-34.1863359 33.921324 0 50.616976 11.6604571 52.737059 37.1014499 0 .795031-.265011 1.590063-.795031 2.385094-.53002.53002-1.325052 1.06004-2.120083 1.06004h-13.780538c-1.325051 0-2.650103-1.06004-2.915114-2.385092-3.180123-14.575569-11.395446-19.345757-33.126293-19.345757-24.380954 0-27.296066 8.480332-27.296066 14.84058 0 7.685301 3.445134 10.070395 36.306418 14.310561 32.596273 4.240165 47.966873 10.335403 47.966873 33.126292-.265011 23.320912-19.345755 36.57143-53.00207 36.57143z"
+                  fill="#539e43"
+                />
+              </svg>
+            </div>
+            <h3>Node.js</h3>
+            <div class="skill-percentage">
+              <div class="percentage-container">
+                <div class="progress-bar" style="width: 75%"></div>
+                <span class="percentage-text">70%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 66.786 70"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m-68.256041 544.14439c-3.2225-.64097-6.0047-2.84478-7.3573-5.82793-.595-1.31236-.8482-2.55217-.8438-4.13316.012-4.5438 2.8692-8.33798 7.3079-9.70579.8177-.25196 1.3573-.31847 2.611-.32182.8692-.002 1.8277.0437 2.1301.10227l.5497.10649.6765-1.31365c1.3815-2.68242 3.5345-4.78981 6.3178-6.18379 2.2961-1.15 3.739-1.48443 6.4043-1.48443 1.8668 0 2.2999.045 3.5043.36412 5.2011 1.37813 9.255 5.45998 10.5309 10.60353.3195 1.2879.4789 4.17568.293 5.30849l-.1269.77355.7284.163c1.8256.40854 3.4011 1.68396 4.2066 3.40532.7966 1.70226.6508 3.90495-.3651 5.51414-.5185.82136-1.535 1.73424-2.3832 2.14031-.4348.20813-.8979.43475-1.0292.50361-.2947.15465-32.3751.14085-33.155-.0143zm33.351-1.89876c.9026-.44879 1.7953-1.45217 2.1662-2.43497.7697-2.03891-.2571-4.40792-2.3055-5.31934-.5173-.23017-.9037-.28342-1.9824-.27321-.737.007-1.3399-.0395-1.3399-.10328 0-.0638.1369-.66194.3042-1.32926.428-1.70717.4237-4.42927-.01-6.09178-.9556-3.66584-3.4332-6.72357-6.8221-8.4192-1.4892-.74512-2.9056-1.08594-4.841-1.16493-2.8639-.11687-4.8633.33445-7.0666 1.59507-2.5693 1.47003-4.784 4.13385-5.6425 6.78661-.1651.51018-.3653.9268-.4449.92583-.08-.00096-.5467-.13408-1.038-.29579-1.3668-.44991-3.6978-.42255-5.0619.0594-1.3731.48513-2.3616 1.10694-3.3908 2.13292-1.5427 1.53788-2.3996 3.63391-2.3996 5.86959 0 3.32007 1.8288 6.23059 4.8041 7.64574 1.71.81331 1.1183.78892 18.4849.76186l15.941-.0248.6444-.32043zm-45.9938-6.42576c-5.7671-.78155-10.2061-2.22963-13.4896-4.40056-1.3548-.89576-2.2902-1.89766-2.8176-3.01787l-.3929-.83466.036-22.59585.036-22.59585.3281-.61562c.8294-1.55619 2.4465-2.88407 5.0211-4.12288 3.2554-1.56646 7.0095-2.54578 12.2408-3.19328 2.1543-.26664 9.47-.21948 11.6809.0753 8.1415 1.08546 14.4594 3.74551 16.4734 6.93577.7936 1.25717.7731.80148.7731 17.22791v15.08135l-.4466.0692c-.2456.038-.8021.10712-1.2366.15352-4.4834.47873-9.1329 3.57818-11.5162 7.67699l-.488.8391-1.9169.0905c-2.265.10697-3.4191.39711-5.1411 1.29243-2.9567 1.53725-5.0699 4.20232-5.9316 7.48077-.238.90554-.3084 1.56192-.3132 2.92023l-.01 1.75213-.7594-.0162c-.4176-.009-1.3777-.1-2.1335-.20243zm11.7239-20.8271c-1.0818-.91805-2.0174-1.7137-2.0791-1.7681-.062-.0544.1631-.2602.4994-.45733.7458-.43708 1.7061-1.48313 2.1139-2.30274.9965-2.00287.9743-4.49403-.058-6.47634-1.135-2.1802-3.5103-3.3239-6.2014-2.986-1.4735.18503-2.3966.59832-3.3701 1.50899-1.5366 1.4374-2.0688 2.84774-1.988 5.26837.046 1.37622.095 1.62372.4886 2.45901.8471 1.79787 2.6182 3.14163 4.4225 3.35531.6788.0804.7377.1249 2.0865 1.57538l1.3881 1.49264h2.3321 2.3322l-1.9669-1.66919zm-5.885-4.6866c-.9451-.47951-1.304-1.30103-1.304-2.98527 0-1.09589.053-1.41584.3224-1.96387.4309-.875 1.29-1.40105 2.1328-1.30604.829.0934 1.2599.42875 1.6984 1.32149.3327.67762.3808.93439.3769 2.01347 0 1.33108-.2403 2.01354-.9098 2.63622-.6994.65058-1.42.73892-2.3167.284zm-9.5093 3.18974c2.485-.57319 3.8348-2.65434 3.1192-4.80889-.3603-1.0849-1.1219-1.76252-2.9819-2.65327-.859-.41138-1.6272-.83198-1.7071-.93468-.3128-.40184-.3121-.66784 0-1.03351.484-.56269 1.5858-.5896 3.0776-.0752l1.138.39245-.039-1.51877-.039-1.51878-.7558-.17965c-1.143-.2717-3.6136-.2584-4.5856.0247-1.949.56765-2.976 1.84152-2.9696 3.68323.01 1.89537.8605 2.79385 3.8676 4.06981 1.2722.53982 1.4179 1.54865.2807 1.94362-.5263.18278-.6761.17922-1.5089-.0358-.5086-.13132-1.2802-.42314-1.7148-.64849l-.7902-.40974v1.64418 1.64418l.7902.21996c.4346.12098.852.2415.9276.26783.3141.10941 3.3435.0524 3.8879-.0732zm26.5512-1.4376v-1.44294h-2.1988-2.1987v-4.74107-4.74107h-1.7865-1.7865v6.18401 6.184h3.9853 3.9852zm-10.5815-24.74151c3.5835-.41532 6.5241-1.16648 8.3827-2.14132 1.2211-.64044 1.5139-.87116 1.9833-1.56285 1.4515-2.13894-1.7987-4.28958-8.0986-5.35876-5.9187-1.0045-13.7186-.77727-18.7108.54509-10.3005 2.7285-6.2399 7.74058 7.0717 8.7287 2.1847.16217 7.109.0514 9.3717-.21086z"
+                  fill="#00bcf2"
+                  transform="translate(97.599 -474.268)"
+                />
+              </svg>
+            </div>
+            <h3>Sql</h3>
+            <div class="skill-percentage">
+              <div class="percentage-container">
+                <div class="progress-bar" style="width: 80%"></div>
+                <span class="percentage-text">80%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg
+                height="50"
+                viewBox="0 0 73 73"
+                width="50"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="none" fill-rule="nonzero">
+                  <rect
+                    fill="#fff"
+                    height="50"
+                    rx="14"
+                    stroke="#134514"
+                    stroke-width="2"
+                    width="50"
+                    x="1"
+                    y="1"
+                  />
+                  <g transform="translate(25 11)">
+                    <path
+                      d="m12.4944775 50.7282275-1.3484326-.4608837s.1646778-6.8744043-2.3026367-7.3677247c-1.64428222-1.9080517.26376953-80.9177197 6.1843262-.263413 0 0-2.0395801 1.0194335-2.4013721 2.763164-.3949414 1.7105811-.1318848 5.3288574-.1318848 5.3288574z"
+                      fill="#a6a385"
+                    />
+                    <path
+                      d="m13.218418 44.0837305s11.8090332-7.7630225 9.0455127-23.913916c-2.6640723-11.74237798-8.9467774-15.59091802-9.6375684-17.0712354-.7563769-1.05258301-1.4803174-2.89433594-1.4803174-2.89433594l.4936768 32.66250974c0 .0331494-1.0197901 9.9997168 1.5790527 11.217334"
+                      fill="#499d4a"
+                    />
+                    <path
+                      d="m10.4556104 44.5111084s-11.08544927-7.5655518-10.42745122-20.8869824c.62484863-13.3217871 8.45345703-19.86754885 9.96656738-21.05166018.98699704-1.05258301 1.01979004-1.44752441 1.08573244-2.50010742.690791 1.48031738.5592627 22.1373926.6576416 24.5712012.2958496 9.3745117-.5261133 18.0917383-1.2824902 19.8675488z"
+                      fill="#58aa50"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <h3>MongoDB</h3>
+            <div class="skill-percentage">
+              <div class="percentage-container">
+                <div class="progress-bar" style="width: 70%"></div>
+                <span class="percentage-text">72%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg
+                height="50"
+                width="50"
+                viewBox="0 0 256 154"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <linearGradient
+                  id="a"
+                  x1="-2.777778%"
+                  x2="100%"
+                  y1="32%"
+                  y2="67.555556%"
+                >
+                  <stop offset="0" stop-color="#2298bd" />
+                  <stop offset="1" stop-color="#0ed7b5" />
+                </linearGradient>
+                <path
+                  d="m128 0c-34.1333333 0-55.4666667 17.0666667-64 51.2 12.8-17.0666667 27.7333333-23.4666667 44.8-19.2 9.737481 2.4343704 16.697363 9.4985481 24.401067 17.3184 12.549689 12.7383704 27.07437 27.4816 58.798933 27.4816 34.133333 0 55.466667-17.0666667 64-51.2-12.8 17.0666667-27.733333 23.4666667-44.8 19.2-9.737481-2.4343704-16.697363-9.4985481-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816zm-64 76.8c-34.1333333 0-55.46666667 17.0666667-64 51.2 12.8-17.066667 27.7333333-23.466667 44.8-19.2 9.7374815 2.43437 16.697363 9.498548 24.4010667 17.3184 12.5496889 12.73837 27.0743703 27.4816 58.7989333 27.4816 34.133333 0 55.466667-17.066667 64-51.2-12.8 17.066667-27.733333 23.466667-44.8 19.2-9.737481-2.43437-16.697363-9.498548-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816z"
+                  fill="url(#a)"
+                />
+              </svg>
+            </div>
+            <h3>Tailwind</h3>
+            <div class="skill-percentage">
+              <div class="percentage-container">
+                <div class="progress-bar" style="width: 75%"></div>
+                <span class="percentage-text">60%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect fill="#777bb3" height="512" rx="15%" width="512" />
+                <g stroke="#fff" stroke-width="6">
+                  <path
+                    id="a"
+                    d="m155 202h-58a3 3 0 0 0 -3 2l-27 141c0 3 3 3 3 3h30c3 0 3-2 3-2l7-35h27c42 0 63-28 68-53s1-56-50-56zm13 54c-4 19-17 27-35 27h-18l11-53h18c27 0 26 10 24 26z"
+                  />
+                  <path
+                    d="m275 311c-4 0-3-4-3-4l12-61c0-8 6-16-18-15h-18l-15 78s0 3-4 3h-29c-3 0-3-3-3-3l28-141s0-2 4-2h30c3 0 2 3 2 3l-7 34h26c36 0 45 17 42 37l-13 69s0 3-5 3z"
+                  />
+                  <use x="239" xlink:href="#a" />
+                </g>
+              </svg>
+            </div>
+            <h3>PHP</h3>
+            <div class="skill-percentage">
+              <div class="percentage-container">
+                <div class="progress-bar" style="width: 75%"></div>
+                <span class="percentage-text">75%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="project">
+        <h1>Project</h1>
+        <div class="image">
+          <a href="https://github.com/vinay2003/Social-help-and-Networking1" class="img-link">
+            <div class="img img1">
+              <img src="img/1.jpg" alt="Image 1" />
+              <p>Social Help And Networking</p>
+            </div>
+          </a>
+          <a href="https://github.com/vinay2003/DiabetesPrediction" class="img-link">
+            <div class="img img2">
+              <img src="img/2.jpg" alt="Image 2" />
+              <p>Diabetes Prediction</p>
+            </div>
+          </a>
+          <a href="https://github.com/vinay2003/AI-Virtual-Mouse-And-Voice-Control" class="img-link">
+            <div class="img img3">
+              <img src="img/3.jpg" alt="Image 3" />
+              <p>AI Virtual Mouse And Voice Control</p>
+            </div>
+          </a>
+          <a href="https://github.com/vinay2003/Hospital-Managem-System" class="img-link">
+            <div class="img img4">
+              <img src="img/4.jpg" alt="Image 4" />
+              <p>Hospital Managem System</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h1>Contact</h1>
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter Your Name"
+            required
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Your Email"
+            required
+          />
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Enter Your Message"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us!</p>
+        <div class="contact-buttons">
+          <a href="tel:+1234567890" class="footer-button" aria-label="Call Us">
+            <i class="ri-phone-line"></i> Call Us
+          </a>
+          <a
+            href="mailto:info@example.com"
+            class="footer-button"
+            aria-label="Email Us"
+          >
+            <i class="ri-mail-line"></i> Email Us
+          </a>
+        </div>
+        <div class="footer-copyright">
+      <p>&copy; 2024 Vinay Kumar Sharma. All rights reserved.</p>
+    </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
